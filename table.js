@@ -85,6 +85,6 @@ function RefreshTable(tableId, urlData) {
 function loadNewData() {
     var url = ['https://requests.internal.fin.ag/api/kpi/KYCKPI?from=', fromDate, '&to=', toDate].join('');
     console.log(url);
-    $('#kycTable').DataTable(url).ajax.load();
-    //RefreshTable("#kycTable", url);
+    //$('#kycTable').DataTable(url).ajax.load();
+    RefreshTable("#kycTable", url);
 }
